@@ -660,10 +660,26 @@ address {
 }
 
 /* TEAM SECTION */
+
 .team {
   background-color: var(--light-backgroud-color);
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 128px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .team-title {
@@ -673,15 +689,33 @@ address {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: center;
+  row-gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    gap: 64px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    gap: 24px;
+  }
 }
 
 .team-item {
-  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   background: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
 }
 
 .team-info {
