@@ -769,23 +769,51 @@ address {
 }
 
 /* customers */
-
 .customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 .customers-title {
   margin-bottom: 72px;
   text-align: center;
 }
+
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
   justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    gap: 24px;
+  }
+}
+
 .customers-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers-item {
+    width: 168px;
+  }
 }
 
 .customers-link {
@@ -913,11 +941,14 @@ address {
 .portfolio-category {
   margin: 0;
 }
+
 /* Footer */
+
 .footer {
   padding: 100px 0;
   background: var(--headers-color);
 }
+
 .footer-content {
   max-width: 264px;
   margin-right: 120px;
