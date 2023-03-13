@@ -306,7 +306,7 @@ address {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
 
   display: flex;
@@ -639,7 +639,14 @@ address {
 
 /* TASK SECTION */
 .tasks {
-  padding-bottom: 120px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .tasks {
+    padding-bottom: 120px;
+    display: block;
+  }
 }
 
 .tasks-title {
