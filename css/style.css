@@ -1033,14 +1033,15 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1200) {
+.portfolio-card:hover,
+.portfolio-card:focus .portfolio-thumb-meta {
+  transform: translatey(0);
+}
+
+@media screen and (max-width: 1200px) {
   .portfolio-thumb-meta {
     display: none;
   }
-}
-
-.portfolio-card:hover .portfolio-thumb-meta {
-  transform: translatey(0);
 }
 
 .portfolio-thumb-text {
