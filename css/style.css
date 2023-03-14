@@ -496,7 +496,7 @@ address {
 }
 
 .hero.bg {
-  max-width: 428px;
+  max-width: 1440px;
   height: 432px;
   margin-left: auto;
   margin-right: auto;
@@ -520,7 +520,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero.bg {
-    max-width: 768px;
+    /* max-width: 768px; */
     height: 436px;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -539,7 +539,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .hero.bg {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     height: 600px;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -882,8 +882,14 @@ address {
 }
 
 .customers-item {
-  width: 190px;
+  width: 135px;
   height: 88px;
+}
+
+@media screen and (min-width: 428px) {
+  .customers-item {
+    width: 190px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1038,11 +1044,11 @@ address {
   transform: translatey(0);
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .portfolio-thumb-meta {
     display: none;
   }
-}
+} */
 
 .portfolio-thumb-text {
   line-height: 1.5;
